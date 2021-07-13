@@ -9,8 +9,9 @@ Harry Potter Quizzes
 Harry Potter page where you can take a trivia quizz see how much you know about Harry potter even add your own questions or you can explore around Hogwarts.
 
 ## Wireframes
+[wireframe](https://whimsical.com/harry-potter-FcR6RZ8arCQmDSwT5ZP4ea)
+<img width="1058" alt="Screen Shot 2021-07-13 at 9 57 00 AM" src="https://user-images.githubusercontent.com/86305867/125485281-60a07749-17d3-4d34-9d27-f11e992152a7.png">
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
 ## Component Hierarchy
 Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
