@@ -9,51 +9,22 @@ Harry Potter Quizzes
 Harry Potter page where you can take a trivia quizz see how much you know about Harry potter even add your own questions or you can explore around Hogwarts.
 
 ## Wireframes
-[wireframe](https://whimsical.com/harry-potter-FcR6RZ8arCQmDSwT5ZP4ea)
-<img width="1058" alt="Screen Shot 2021-07-13 at 9 57 00 AM" src="https://user-images.githubusercontent.com/86305867/125485281-60a07749-17d3-4d34-9d27-f11e992152a7.png">
+
+<img width="936" alt="Screen Shot 2021-07-13 at 10 49 24 AM" src="https://user-images.githubusercontent.com/86305867/125493103-6f30845c-55a2-4bf5-b197-75a2f487f82b.png">
+
 
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+<img width="649" alt="Screen Shot 2021-07-13 at 10 40 42 AM" src="https://user-images.githubusercontent.com/86305867/125492021-94842081-e57c-4673-a9c2-8222246ce951.png">
+
+
 
 ## API and Data Sample
 
 Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
-```json
-{
-    "records": [
-        {
-            "id": "recONRzIUTuZ5lXaF",
-            "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "rec3oYZ5Tp0AIDsKe",
-            "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "recA34tOaoE1IVeC1",
-            "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        }
-    ],
-    "offset": "recA34tOaoE1IVeC1"
-}
-```
+<img width="582" alt="Screen Shot 2021-07-13 at 10 26 52 AM" src="https://user-images.githubusercontent.com/86305867/125489963-e81c2c7a-7113-41f5-a367-7d65cb96ab94.png">
+
 
 ### MVP/PostMVP
 
@@ -62,15 +33,18 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Get questions and answers from airtable 
+- use form to add new quetions and answers to airtable
+- Homepage funcationality to be repsonsive 
+- Delete posts from feed
+
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
 - Add second API
-- Use local storage to save user favorites
+- Render pictures for Hogwarts exploring 
+
 
 ## Project Schedule
 
@@ -94,16 +68,25 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| AirTable Setup| H | 3hrs|:---: | :---: |
+| Homepage Buttons| M | 2hrs| :---:| :---: |
+| Trivia Page Data Render | H |  3hrs | :---: | :---: |
+| Trivia Form | H |  3hrs | :---: | :---: |
+| Trivia Data Deletion | L |  3hrs | :---: | :---: |
+| Add New Trivia Form | M |  3hrs | :---: | :---: |
+| Transfer New Trivia To Airtable | M |  3hrs | :---: | :---: |
+| New Data Deletion  | L |  2hrs | :---: | :---: |
+| CSS Trivia | M |  3hrs | :---: | :---: |
+| CSS Hogwarts | L |  3hrs | :---: | :---: |
+| CSS New Trivia | M |  3hrs | :---: | :---: |
+| Total | H | 34hrs| hrs | hrs |
 
 ## SWOT Analysis
 
-### Strengths:
+### Strengths: I can completely visualy how I want my app to look at the end. I have committed to my time frames to help me excute my visual
 
-### Weaknesses:
+### Weaknesses: I am still struggling a little with fully understanding REACT. I do know where to get help and I am aware I need to ask for it when I am stuck. 
 
-### Opportunities:
+### Opportunities: This project in general is going to help me so much in understanding REACT more and how to put it all together better. 
 
-### Threats:
+### Threats: I won't lie I'm really bad with asking for help when I am stuck. I need to be better about reaching out and asking questions. Im planning on doing that more with this project
