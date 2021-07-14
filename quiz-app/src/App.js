@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from "./Components/Navbar";
 import Trivia from "./Components/Trivia";
-import addNew from "./Components/AddNew";
+import AddNew from "./Components/AddNew";
 import Footer from "./Components/Footer";
+import { Route } from "react-router-dom";
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
       <Navbar />
       <Route path="/"></Route>
       <Route path="/trivia"> Trivia</Route>
-      <Triva />
+      <Trivia />
       <Route path="/add-new">Add Your Trivia</Route>
-      <addNew />
+      <AddNew />
      
       <Footer />
       

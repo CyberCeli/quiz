@@ -26,4 +26,8 @@ export default function TriviaData() {
     });
     setQuestions(res.data);
   };
+  return (
+    <div>TriviaData</div>
+    
+  )
 }
