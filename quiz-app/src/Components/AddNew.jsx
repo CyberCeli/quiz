@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import react from 'react';
+import { useHistory } from 'react-router';
 import axios from 'axios';
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
@@ -15,13 +15,15 @@ export default function AddNew() {
   const [c, setC] = useState("");
   const [answers, setAnswer] = useState("");
 
+  const history = useHistory();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
       questions,
-      A,
-      B,
-      C,
+      a,
+      b,
+      c,
       answers,
     };
 
@@ -33,11 +35,15 @@ export default function AddNew() {
       }
     );
     console.log(res);
+    setQuestions("");
+    history.push(`/harrypotter${res.data.id}`);
   };
+  
 
   return (
     <div>
-      ADD NEW
+
+      Add Your Harry Trivia
     <form onSubmit={handleSubmit}>
     <label>Questions</label>
     <input
@@ -45,35 +51,37 @@ export default function AddNew() {
       value={questions}
       onChange={(e) => setQuestions(e.target.value)}/>
   <br />
-  <form onSubmit={handleSubmit}>
+  
     <label>A  </label>
     <input
       type="text"
-      value={A}
-      onChange={(e) => setA(e.target.value)}/>
+      value={a}
+            onChange={(e) => setA(parseInt(e.target.value))}
+          />
     <br />
-    <form onSubmit={handleSubmit}>
+    
     <label>B</label>
     <input
       type="text"
-      value={B}
+      value={b}
       onChange={(e) => setB(e.target.value)}/>
       <br />
-      <form onSubmit={handleSubmit}>
+      
     <label>C</label>
     <input
       type="text"
-      value={C}
+      value={c}
       onChange={(e) => setC(e.target.value)}/>
         <br />
-        <form onSubmit={handleSubmit}>
+        
     <label>answer</label>
     <input
       type="text"
-      value={answer}
+      value={answers}
       onChange={(e) => setAnswer(e.target.value)}/>
                 <br />
-                <button>CREATE ME</button>
+          <button>CREATE ME</button>
+          
               </form>
               </div>
   );
