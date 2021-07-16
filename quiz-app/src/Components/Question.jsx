@@ -5,8 +5,8 @@ export default function question({ question, incrementQuestion, incrementScore }
 
   // }
   function checkifcorrect(e) {
-    console.log(e.target.innerText, question.fields.Answer)
-    if (e.target.innerText == question.fields.Answer) incrementScore();
+    console.log(e.target.innerText, question.fields.answer)
+    if (e.target.innerText == question.fields.answer) incrementScore();
     incrementQuestion();
   }
 
@@ -16,11 +16,11 @@ export default function question({ question, incrementQuestion, incrementScore }
     <div>
       
         <div>
-          {question.fields.Questions}
+          {question.fields.questions}
           <div>
-          <button onClick={checkifcorrect}>{question.fields.A}</button>
-          <button onClick={checkifcorrect}>{question.fields.B}</button>
-          <button onClick={checkifcorrect}>{question.fields.C}</button>
+          <button onClick={checkifcorrect}>{question.fields.a}</button>
+          <button onClick={checkifcorrect}>{question.fields.b}</button>
+          <button onClick={checkifcorrect}>{question.fields.c}</button>
           
           
           </div></div>

@@ -5,6 +5,8 @@ import AddNew from "./Components/AddNew";
 import Footer from "./Components/Footer";
 import { Route } from "react-router-dom";
 import TriviaData from './Components/TriviaData';
+import Answerbox from './Components/Answerbox';
+
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE;
@@ -15,11 +17,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Route path="/"></Route>
-      <Route exact path="/trivia"> </Route>
-      <TriviaData />
-      <Route exact path="/add-new"> </Route>
-      <AddNew />
+      <Route path="/"> </Route>
+      <Route exact path="/trivia"><TriviaData /> </Route>
+      <Route exact path="/add-new"><AddNew /> </Route>
+      
      
       <Footer />
       

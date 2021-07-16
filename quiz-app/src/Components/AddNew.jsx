@@ -13,7 +13,7 @@ export default function AddNew() {
   const [a, setA] = useState("");
   const [b, setB] = useState("");
   const [c, setC] = useState("");
-  const [answers, setAnswer] = useState("");
+  const [answer, setAnswer] = useState("");
 
   const history = useHistory();
 
@@ -24,7 +24,7 @@ export default function AddNew() {
       a,
       b,
       c,
-      answers,
+      answer,
     };
 
     const res = await axios.post(
@@ -56,7 +56,7 @@ export default function AddNew() {
     <input
       type="text"
       value={a}
-            onChange={(e) => setA(parseInt(e.target.value))}
+            onChange={(e) => setA(e.target.value)}
           />
     <br />
     
@@ -77,7 +77,7 @@ export default function AddNew() {
     <label>answer</label>
     <input
       type="text"
-      value={answers}
+      value={answer}
       onChange={(e) => setAnswer(e.target.value)}/>
                 <br />
           <button>CREATE ME</button>
