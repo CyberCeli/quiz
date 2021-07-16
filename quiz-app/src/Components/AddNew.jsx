@@ -36,7 +36,7 @@ export default function AddNew() {
     );
     console.log(res);
     setQuestions("");
-    history.push(`/harrypotter${res.data.id}`);
+    history.push(`/harrypotter/${res.data.id}`);
   };
   
 
