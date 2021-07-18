@@ -1,6 +1,6 @@
 import {Component} from "react";
-import question from './question';
-import Result from './components/Answerbox';
+import question from './Question';
+import Result from './Answerbox';
 
 class Quiz extends Component {
 constructor() {
@@ -33,9 +33,9 @@ computeAnswer = (answer, correctAns) => {
 	});
 	}
 	this.setState({
-	responses: this.state.responses < 5
+	responses: this.state.responses < 10
 		? this.state.responses + 1
-		: 5
+		: 10
 	});
 };
 
@@ -51,18 +51,20 @@ render() {
 	</div>
 
 	{this.state.questionBank.length > 0 &&
-	this.state.responses < 5 &&
+	this.state.responses < 10 &&
 	this.state.questionBank.map(({question, answers,
-	correct, questionId}) => <QuestionBox question=
-	{question} options={answers} key={questionId}
-	selected={answer => this.computeAnswer(answer, correct)}/>)}
+    correct, questionId }) => <question question=
+      {question} options={answers} key={questionId}
+      selected={answer => this.computeAnswer(answer, correct)} playAgain={this.playAgain}
+    score={this.state.score} responses={this.state.responses}
+    />)}
 
-	{
-		this.state.responses === 5
-		? (<Result score={this.state.score}
-			playAgain={this.playAgain}/>)
+	{/* {
+		this.state.responses === 10
+        ? (<Result score={this.state.score}
+          playAgain={this.playAgain}/>)
 		: null
-	}
+	} */}
 
 	</div>)
 }

@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import Result from './Answerbox';
 
-export default function question({ question, incrementQuestion, incrementScore }) {
+export default function question({ question, incrementQuestion, incrementScore, playAgain, responses, score }) {
   // const handleAnwserButtonClick = (isCorrect) => {
 
   // }
@@ -9,23 +10,7 @@ export default function question({ question, incrementQuestion, incrementScore }
     if (e.target.innerText == question.fields.answer) incrementScore();
     incrementQuestion();
   }
-  const QuestionBox = ({ question, options, selected}) => {
-    const [answer, setAnswer] = useState(options);
-    return(
-  <div className="questionBox">
-  <div className="question">{question}</div>
-  {answer.map((text, index) => (
-    <button
-        key={index}
-        className="answerBtn"
-        onClick={()=>{
-              setAnswer();
-              selected(text);
-            }}> {text}
-   </button>
-  ))}
-
-
+ 
   return (
     <div>
       
@@ -36,6 +21,8 @@ export default function question({ question, incrementQuestion, incrementScore }
           <button onClick={checkifcorrect}>{question.fields.b}</button>
           <button onClick={checkifcorrect}>{question.fields.c}</button>
           
+          {responses === 10 ? (<Result score={score}
+            playAgain={playAgain} />) :null}
           
           </div></div>
     </div>

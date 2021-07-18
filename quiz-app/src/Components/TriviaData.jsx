@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Question from "./Question";
-
+import Result from "./Answerbox"
 
 
 
@@ -53,6 +53,9 @@ export default function TriviaData() {
         incrementQuestion={incrementQuestion}
       incrementScore={incrementScore}
       />}
+      {/* {currentQuestion === questions.length - 1? (<Result score={score}
+          playAgain={this.playAgain}/>)
+		: null} */}
     </div>
     
   )

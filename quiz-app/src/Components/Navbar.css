@@ -1,0 +1,21 @@
+nav a {
+  font-size: 22px;
+  font-family: fantasy;
+  color: white;
+  background-color: black;
+  display: inline;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 4 px;
+  padding: 0 30px 0 30px;
+  text-decoration: none;
+}
+
+.nav-link, .logo{
+  margin: 10px;
+  padding: 10px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
