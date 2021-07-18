@@ -1,13 +1,13 @@
-import React from 'react'
-import question from './Question';
+// import React from 'react'
+// import question from './Question';
+// import Trivia from "./Trivia";
 
-export default function Answerbox () {
-  const Result = ({score, playAgain}) => (
-    <div className="score-board">
-      <div className="score"> Your score is {score} / 5 correct answer ! ! ! </div>
-      <button onClick={playAgain} > Play Again </button>
-  return (
+// export default function Answerbox({ question, options, selected }) {
   
-  )
-}
 
+//   const Result = ({score, playAgain}) => (
+//     <div className="score-board">
+//       <div className="score"> Your score is {score}  </div>
+//       <button onClick={playAgain}>{answer}</button>
+
+// }
