@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Question from "./Question";
 import Result from "./Answerbox"
+import "./Question.css"
 
 
 
@@ -40,22 +41,32 @@ export default function TriviaData() {
   }
 
   function incrementScore() {
-    console.log("a")
+    console.log("You Got It!")
     setScore(score + 1);
   }
   console.log(score);
 
+  function playAgain() {
+    fetchQuestions();
+    setCurrentQuestion(0);
+    setScore(0);
+  }
   
 
   return (
-    <div> How Well Do You Know Harry Potter?
+    <div>
+      <br />
+      <h1>How Well Do You Know Harry Potter?</h1>
+     <br/ >
       {questions.length > 0 && <Question question={questions[currentQuestion]}
         incrementQuestion={incrementQuestion}
       incrementScore={incrementScore}
       />}
-      {/* {currentQuestion === questions.length - 1? (<Result score={score}
-          playAgain={this.playAgain}/>)
-		: null} */}
+      <br />
+      <br />
+      {currentQuestion === questions.length - 1? (<Result score={score}
+          playAgain={playAgain}/>)
+		: null}
     </div>
     
   )

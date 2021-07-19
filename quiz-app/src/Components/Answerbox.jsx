@@ -10,4 +10,6 @@ export default function Answerbox({ question, options, selected, score, playAgai
       <div className="score"> Your score is {score}  </div>
       <button onClick={playAgain}>Play Again</button>
     </div>
-)}
+  )
+}
+// GitHub Source

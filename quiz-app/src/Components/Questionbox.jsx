@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./Question.css";
 
 export default function Questionbox() {
   const QuestionBox = ({ question, options, selected }) => {
@@ -22,5 +23,4 @@ export default function Questionbox() {
       </div>
     );
   };
-    
-
+}

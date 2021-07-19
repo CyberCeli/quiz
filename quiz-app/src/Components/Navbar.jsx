@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav>
       <Link to="/homepage">Home</Link>
       <Link to="/trivia">Trivia</Link>
-      <Link to="/">Explore Hogwarts</Link>
+      <Link to="/explore">Explore Hogwarts</Link>
       <Link to="/add-new">Add Your Trivia</Link>
     </nav>
   );

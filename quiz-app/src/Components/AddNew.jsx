@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router';
 import axios from 'axios';
+import "./Addnew.css";
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE;
@@ -41,11 +42,23 @@ export default function AddNew() {
   
 
   return (
-    <div>
-
+   
+    <div className="Addnew">
+      <br />
+      <br />
       Add Your Harry Trivia
+      <br />
+      <br />
+      <br />
+      Instructions:
+      <br />
+      1. Type Your Question
+      <br />
+      2. Type In Different Answers Including The Correct One
+      <br />
+      3. Type In The Correct Answer In The Bottom As Well
     <form onSubmit={handleSubmit}>
-    <label>Questions</label>
+    <label>Question</label>
     <input
       type="text"
       value={questions}
@@ -74,7 +87,7 @@ export default function AddNew() {
       onChange={(e) => setC(e.target.value)}/>
         <br />
         
-    <label>answer</label>
+    <label>Answer</label>
     <input
       type="text"
       value={answer}

@@ -7,6 +7,8 @@ import { Route } from "react-router-dom";
 import TriviaData from './Components/TriviaData';
 import Answerbox from './Components/Answerbox';
 import Homepage from './Components/Homepage';
+import Explore from './Components/Explore'
+
 
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
@@ -21,8 +23,9 @@ function App() {
       <Route exact path="/homepage"><Homepage /> </Route>
       <Route exact path="/trivia"><TriviaData /> </Route>
       <Route exact path="/add-new"><AddNew /> </Route>
+      <Route exact path="/explore"><Explore /></Route>
       
-     
+      
       <Footer />
       
     </div>

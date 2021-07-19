@@ -1,5 +1,6 @@
 import React from 'react';
 import Result from './Answerbox';
+import "./questions.css";
 
 export default function question({ question, incrementQuestion, incrementScore, playAgain, responses, score }) {
   // const handleAnwserButtonClick = (isCorrect) => {
@@ -15,10 +16,14 @@ export default function question({ question, incrementQuestion, incrementScore, 
     <div>
       
         <div>
-          {question.fields.questions}
-          <div>
+        {question.fields.questions}
+        <br />
+        <div>
+          <br />
           <button onClick={checkifcorrect}>{question.fields.a}</button>
+          <br />
           <button onClick={checkifcorrect}>{question.fields.b}</button>
+          <br />
           <button onClick={checkifcorrect}>{question.fields.c}</button>
           
           {responses === 10 ? (<Result score={score}
