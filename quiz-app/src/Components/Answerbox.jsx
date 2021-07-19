@@ -1,8 +1,8 @@
 import React from 'react'
-import question from './Question';
-import Trivia from "./Trivia";
 
-export default function Answerbox({ question, options, selected, score, playAgain}) {
+
+
+export default function Answerbox({ question, score, playAgain}) {
   
   return (
   

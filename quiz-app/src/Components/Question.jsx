@@ -8,7 +8,7 @@ export default function question({ question, incrementQuestion, incrementScore, 
   // }
   function checkifcorrect(e) {
     console.log(e.target.innerText, question.fields.answer)
-    if (e.target.innerText == question.fields.answer) incrementScore();
+    if (e.target.innerText === question.fields.answer) incrementScore();
     incrementQuestion();
   }
  
