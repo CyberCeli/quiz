@@ -6,6 +6,7 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <nav>
+      <br />
       <Link to="/homepage">Home</Link>
       <Link to="/trivia">Trivia</Link>
       <Link to="/explore">Explore Hogwarts</Link>

@@ -24,3 +24,23 @@
     background-image: url("https://external-preview.redd.it/wlWkd2dTHGLvmWvs0_m1eBKRmAYwX2yjVp4kkTf6uKM.jpg?auto=webp&s=b53948097aaf99550e1a96003b3aa32ad734b5fa");
   }
 }
+
+
+/* iphone plus */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .background {
+    height: 300px;
+    margin-top: 100px;
+  }
+  
+}
+/* ipad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .background{
+      height: 600px;
+      margin: 100px;
+    }
+  }
