@@ -13,7 +13,7 @@ h1 {
   justify-content: center;
   padding: 8px;
 }
-
+/* iphone plus  */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .Homepage {
     height: 300px;
@@ -25,6 +25,7 @@ h1 {
   }
 }
 
+/* ipad */
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -36,4 +37,10 @@ h1 {
       padding-top: 600px;
     }
 
+}
+@media screen (max-width: 600px) {
+
+  .Homepage{
+    height:500px;
+  }
 }
