@@ -68,18 +68,18 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| AirTable Setup| H | 3hrs|:---: | :---: |
-| Homepage Buttons| M | 2hrs| :---:| :---: |
-| Trivia Page Data Render | H |  3hrs | :---: | :---: |
-| Trivia Form | H |  3hrs | :---: | :---: |
-| Trivia Data Deletion | L |  3hrs | :---: | :---: |
-| Add New Trivia Form | M |  3hrs | :---: | :---: |
-| Transfer New Trivia To Airtable | M |  3hrs | :---: | :---: |
-| New Data Deletion  | L |  2hrs | :---: | :---: |
-| CSS Trivia | M |  3hrs | :---: | :---: |
-| CSS Hogwarts | L |  3hrs | :---: | :---: |
-| CSS New Trivia | M |  3hrs | :---: | :---: |
-| Total | H | 34hrs| hrs | hrs |
+| AirTable Setup| H | 3hrs| 4hrs | 4hrs|
+| Homepage Buttons| M | 2hrs| 1.5 hrs| 1.5 hrs |
+| Trivia Page Data Render | H |  3hrs | 4hrs | 4hrs |
+| Trivia Form | H |  3hrs | 6hrs | 6hrs |
+| Trivia Data Deletion | L |  3hrs | 2hrs | 2hrs |
+| Add New Trivia Form | M |  3hrs | 2hrs | 2hrs |
+| Transfer New Trivia To Airtable | M |  3hrs | 3.5hrs | 3.5hrs |
+| New Data Deletion  | L |  2hrs | 1.5hrs | 1.5hrs |
+| CSS Trivia | M |  3hrs | 3hrs | 3hrs |
+| CSS Hogwarts | L |  3hrs | 2 hr | 2hr |
+| CSS New Trivia | M |  3hrs | 2hr | 2hr |
+| Total | H | 34hrs| 32.5hrs | 32.5hrs |
 
 ## SWOT Analysis
 
